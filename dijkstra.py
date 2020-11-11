@@ -1,13 +1,11 @@
 graph = {
 
-'a':{'b':3, 'c':4, 'd':7},
-'b':{'c':3, 'f':4},
-'c':{'f':3, 'd':4},
-'d':{'e':3, 'g':4},
-'e':{'g':3, 'h':4},
-'f':{'e':3, 'h':4},
-'g':{'h':3},
-'h':{'g':3}
+'1':{'2':2, '3':1},
+'2':{'4':3, '5':4},
+'3':{'4':2, '5':6},
+'4':{'6':7},
+'5':{'6':8},
+'6':{}
 
 }
 
@@ -60,4 +58,4 @@ def dijkstra(graph, start, goal):
         print("O caminho mais curto é " + str(shortest_distance[goal]))
         print("O caminho mais otimizado é" + str(track_path))
 
-dijkstra(graph, 'a', 'h')
+dijkstra(graph, '1', '6')
